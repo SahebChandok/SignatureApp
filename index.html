@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature</title>
+    <style>
+        .canvas{
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
+    <div class="main">
+        <div class="top">
+            <div class="top-left">
+                <p>Text Color Picker</p>
+                <input type="color" class="textColorPicker" id="textColorPicker">
+            </div>
+            <div class="top-right">
+                <p>Text Size</p>
+                <select name="thickness" id="textThickness">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="middle">
+            <canvas class="canvas" id="myCanvas" width="500" height="300"></canvas>
+        </div>
+
+        <div class="bottom">
+            <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+            <button type="button" class="btn btn-success" id="saveButton">Save Signature</button>
+            <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve Previous Signature</button>
+        </div>
     
+    </div>
 </body>
 </html>
